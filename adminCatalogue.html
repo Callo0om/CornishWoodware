@@ -1,0 +1,106 @@
+<div class="newProductPopup">
+	<form action="newProduct.php" method="post" class="uploadForm" enctype="multipart/form-data">
+		<fieldset>
+		<legend style="font-size: 1.5vw;">Add New Product</legend>
+			<table><tr><td>
+			<fieldset id="size"><legend>Details:</legend>
+				<label for="newName">Name: </label>
+				<input type="text" name="newName" maxlength="63"> <br />
+				<label for="newDesc">Description: </label>
+				<textarea name="newDesc" maxlength="240"></textarea><br />
+				<label for="newPrice">Price (p): </label>
+				<input type="number" min="0.00" max="100000.00" step="0.01" name="newPrice"> <br />
+				<label for="newQuantity">Quantity: </label>
+				<input type="number" min="0" max="100" step="1" name="newQuantity"> <br /><br />
+				
+				<label for="type">Type: </label>
+				<select name="type" id="type">
+					<option selected>Chopping Boards</option>
+					<option>Coasters</option>
+					<option>Picture Frames</option>
+					<option>Fridge Magnets</option>
+					<option>Other</option>
+				</select>
+			</fieldset>
+			
+			<fieldset id="size"><legend>Images:</legend>
+				<label for="newNumOfPics">Pictures: </label>
+				<!--
+				<input type="number" min="0" max="8" step="1" value="0" name="newNumOfPics" onchange="setNumberOfPicInputs()"> <br />
+				<div id="picInputs" >
+				</div>
+				-->
+				<input type="file" name="images[]" multiple />
+			</fieldset>
+			
+			<fieldset id="size"><legend>Size:</legend>
+			
+				<fieldset id="size"><legend>Delivery catagory:</legend>
+					<label for="Small">Small: </label>
+					<input type="radio" value="Small" checked name="newSize" style="width: 1vw; height: 1vw;">
+					<label for="Large">Large: </label>
+					<input type="radio" value="Large" name="newSize" style="width: 1vw; height: 1vw;">
+				</fieldset>
+				
+				<fieldset id="size"><legend>Item Size:</legend>
+					<label for="width">Width (cm): </label>
+					<input type="number" min="0" max="400" step="1" name="newWidth">
+					<br />
+					<label for="height">Height (cm): </label>
+					<input type="number" min="0" max="400" step="1" name="newHeight">
+				</fieldset>
+				
+			</fieldset>
+				
+			</td><td>
+			
+			<fieldset id="size"><legend>Material:</legend>
+				<input type="text" name="materialList" id="materialList" hidden>
+				<label for="newMaterial">Materials: </label>
+				<select name="newMaterial" id="newMaterial" size="4" multiple onChange="dropDownSelection(document.getElementById('newMaterial'), document.getElementById('newMaterialAdd'), document.getElementById('materialList'))">
+					<option id="Oak">Oak</option>
+					<option id="Iroko">Iroko</option>
+					<option id="Mahogany">Mahogany</option>
+					<option id="YellowHeart">YellowHeart</option>
+					<option id="Pine">Pine</option>
+					<option id="Ash">Ash</option>
+				</select>
+				<input type="button" name="newMaterialAdd" id="newMaterialAdd" value="Add" style="width: 8vw;" onClick="setDropDown(document.getElementById('newMaterial'), document.getElementById('newMaterialAdd'), document.getElementById('materialList'))"/>
+			</fieldset>
+			
+			<fieldset id="size"><legend>Finish:</legend>
+				<input type="text" name="finishList" id="finishList" hidden>
+				<label for="newFinish">Finishes: </label>
+				<select name="newFinish" id="newFinish" size="4" multiple onChange="dropDownSelection(document.getElementById('newFinish'), document.getElementById('newFinishAdd'), document.getElementById('finishList'))">
+					<option id="Oak">Mineral Oil</option>
+					<option id="Iroko">Tung Oil</option>
+					<option id="Mahogany">Boiled Linseed oil</option>
+					<option id="Pine">Beeswax</option>
+					<option id="Pine">Carnauba Wax</option>
+				</select>
+				<input type="button" name="newFinishAdd" id="newFinishAdd" value="Add" style="width: 8vw;" onClick="setDropDown(document.getElementById('newFinish'), document.getElementById('newFinishAdd'), document.getElementById('finishList'))"/>
+			</fieldset>
+
+			<fieldset id="size"><legend>Demo:</legend>
+				<label for="newDemo">Demo: </label>
+				<input type="checkbox" name="newDemo" style="width: 1vw; height: 1vw;"> <br />
+			</fieldset>
+			
+			<fieldset id="offer"><legend>Offer:</legend>
+				<label for="offer">Offer: </label>
+				<select name="offer" id="offer">
+					<option value='None' selected>None</option>
+					<option value='2for'>2 For (p)</option>
+					<option value='reduceBy'>Reduced by (%)</option>
+					<option value='reduceTo'>Reduced to (p)</option>
+				</select>
+			<label for="Price">Price (p): </label>
+			<input type="number" min="0.00" max="100000.00" step="0.01" name="newOfferPrice"> <br />
+			</fieldset>
+			
+			<input type="submit" value="Upload New Product" name="submit" class="submit">
+			
+			</td></tr></table>
+		</fieldset>
+	</form>
+</div>

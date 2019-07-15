@@ -1,0 +1,878 @@
+html {
+    max-width: 100%;
+    overflow-x: hidden;
+	font-family: Blacksword, arial;
+	line-height: 1.5vw;
+	background: #e7e3d4;
+	font-size: 1vw;
+}
+
+a{
+	font-family: Blacksword, arial;
+	text-decoration: underline;
+	color: black;
+}
+
+h1 a{
+	
+	font-family: Blacksword, arial;
+	font-size: 5vw;
+	line-height: 5vw;
+	text-align: center;
+	text-decoration: none;
+	position: relative;
+	width: 100vw;
+	top: 0;
+	left: 2vw;
+	
+}
+
+
+input[type=submit],[type=button],[type=reset], .button{
+	font-family: Blacksword, arial;
+	line-height: 2vw; 
+	font-family: Timeless;
+	font-size: 2vw;
+	cursor: pointer;
+	box-shadow: 0.4vw 0.4vw 1vw -0.45vw rgba(0,0,0,0.75);
+	transition: transform 0.1s, background 0.1s;
+	margin: 0;
+	margin-top: 0.5vw;
+	margin-bottom: 0.5vw;
+	padding: 1.5vw;
+	padding-top: 0;
+	padding-bottom: 0.25vw;
+	text-decoration: none;
+	border: 0.1vw solid black;
+	border-bottom: 0.25vw solid #b23850;
+	border-radius: 0.5vw;
+	background: #c4dbf6;
+}
+
+input[type=submit]:hover,[type=button]:hover,[type=reset]:hover, .button:hover{ 
+	background: #b23850;
+	transform: scale(1.10);
+	border: 0.1vw solid black;
+}
+
+input[type=submit]:focus,[type=button]:focus,[type=reset]:focus, .button:focus{
+	outline: 0;
+}
+
+select{
+	background: #c4dbf6;
+	border: 0.125vw solid #000000;
+	padding: 0.15vw;
+	font-family: FoglihtenNo07, arial;
+	font-size: 1.25vw;
+	border-radius: 0.75vw;
+}
+
+select:focus {
+	outline: 0;
+}
+
+input[type=text],[type=email],[type=number],[type=password], textarea{
+	font-family: Timeless, arial;
+	font-size: 1.2vw;
+	background: #c4dbf6;
+	box-shadow: 0.4vw 0.4vw 1vw -0.45vw rgba(0,0,0,0.75);
+	border: 0;
+	border-radius: 0.5vw;
+	border-bottom: 0.2vw solid #b23850;
+	padding: 0.2vw;
+	padding-left: 0.6vw;
+}
+
+input[type=text],[type=email],[type=number],[type=password], textarea:focus {
+	outline: 0;
+}
+
+
+.pageTitle{
+	position: relative;
+	width: 100%;
+	height: auto;
+	margin: 0;
+	line-height: 4vw;
+	vertical-align: bottom;
+	text-align: center;
+	font-size: 4vw;
+	padding: 0;
+	top: 1vw;
+	z-index: 500;
+}
+
+header nav .navBar{
+	background: #e7e3d4;
+	position: relative;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: auto;
+	z-index: 200;
+	padding: 0;
+	margin: 0;
+	padding-top: 0.3vw;
+	padding-bottom: 0.3vw;
+	box-shadow: 0.3vw 0.3vw 2.2vw -0.45vw rgba(0,0,0,0.75);
+	border-bottom: 0.5vw solid #b23850;
+	border-radius: 0 0 1vw 1vw;
+}
+
+header nav .navBarFlex{ 
+	position: relative;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+header nav .navBarFlex div{ 
+	width: 16vw;
+	margin: 0 0.5vw 0 0.5vw ;
+	top: 0.2vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	box-shadow: 0.4vw 0.4vw 1vw -0.45vw rgba(0,0,0,0.75);
+	transition: background 0.1s;
+	transition: transform 0.1s;
+	line-height: 0.1vw;
+	text-decoration: none;
+	border: 0.25vw solid #000000;
+	border-radius: 2vw;
+	background: #c4dbf6;
+}
+
+header nav .navBarFlex a{
+	width: 100%; 
+	text-align: center; 
+	line-height: 2.4vw;
+	text-decoration: none;
+	font-weight: bold;
+	color: #000000;
+	transition: color 0.1s;
+	font-family: Timeless;
+	font-size: 2vw;
+}
+
+header nav .navBarFlex div:hover{ 
+	background: #b23850;
+}
+
+.navBarFlex div:hover{
+	transform: scale(1.10);
+}
+
+.cartNumber{
+	color: #000000;
+	background: url('../images/cartIcon.png') no-repeat top left;
+	background-size:100% 100%;
+	position: relative;
+	width: 2.8vw;
+	height: 2.4vw;
+	right: 1vw;
+	top: -1vw;
+	font-size: 1.5vw;
+	font-family: FoglihtenNo07, arial;
+	font-weight: bold;
+	text-align: center;
+	line-height: 2.6vw;
+}
+
+.headerText{
+	position: relative;
+	z-index: 1;
+	font-size: 7vw;
+	line-height: 10vw;
+	text-decoration: none;
+	font-family: Blacksword;
+	z-index: 99;
+	margin: 1vw;
+	padding-left: 2vw;
+	padding-right: 2vw;
+	width: auto;
+	text-shadow: 0.2vw 0.2vw 0.25vw rgba(255,255,255,0.75);
+	box-shadow: 0.4vw 0.4vw 1vw -0.45vw rgba(0,0,0,0.75);
+	background: #c4dbf6;
+	border-radius: 3vw;
+	border: 0.1vw solid black;
+	border-bottom: 0.5vw solid #b23850;
+}
+
+.headerText2{
+	position: relative;
+	font-size: 8vw;
+	line-height: 10vw;
+	text-decoration: none;
+	font-family: Blacksword;
+	z-index: 1;
+	top: 1.5vw;
+	left: 2.5vw;
+	display: inline;
+}
+
+.headerSubText{
+	position: absolute;
+	z-index: 2500;
+	font-size: 1.75vw;
+	bottom: 2vw;
+	left: 35vw;
+	text-shadow: 0.1vw 0.1vw 0.125vw rgba(255,255,255,0.75);
+}
+
+.headerLogo{
+	position: absolute;
+	right: 1vw;
+	top: 2vw;
+	width: 8.5vw;
+	height: 8vw;
+	z-index: 999;
+	box-shadow: 0.3vw 0.3vw 2.2vw -0.45vw rgba(255,255,255,0.75);
+	border-radius: 1vw;
+	border: 0.1vw solid black;
+}
+
+.headerLogo2{
+	position: absolute;
+	right: 1.25vw;
+	top: 1.25vw;
+	width: 8vw;
+	height: 8vw;
+	z-index: 999;
+	box-shadow: 0.3vw 0.3vw 2.2vw -0.45vw rgba(0,0,0,0.75);
+	border-radius: 1vw;
+}
+
+.adminText{
+	margin-left: 2vw;
+}
+
+.adminLoginBox {
+	display: none;
+	position: absolute;
+	left: 22vw;
+	top: -8vw;
+	background: #808080;
+	border: 0.5vw solid black;
+	z-index: 100;
+}
+
+.adminLoginBox form{
+	margin: 0.5vw 1vw 0.5vw 1vw;
+	
+}
+
+
+
+.textBoxes{
+	font-size: 1vw;
+	font-family: Timeless;
+}
+
+#showAdminPopUp {
+display: none;
+
+}
+
+#showAdminPopUp:checked ~ .adminLoginBox {
+display: block;
+
+}
+
+.pageContent{
+	position: relative;
+	left: 17.5vw;
+	width: 65vw;
+	height: auto;
+	padding: 2vw;
+	box-shadow: 0.3vw 0.3vw 2.2vw -0.45vw rgba(0,0,0,0.75);
+}
+
+
+.topText{
+	margin: 2vw 5vw 2vw 5vw;
+	padding: 1vw;
+	font-size: 1.4vw;
+	font-family: 'Timeless';
+}
+
+.slider{
+	margin-top: 1vw;
+	left: 5vw;
+	width: 55vw;
+	box-shadow: inset 0.3vw 0.3vw 2.2vw -0.45vw rgba(0,0,0,0.75);
+}
+
+.sliderImage{
+	width: 53vw;
+	height: 13vw;
+	margin: 1vw;
+	object-fit: cover;
+	border: 0.1vw solid black;
+}
+
+.footerContainer{
+	position: relative;
+	width: 80vw;
+	margin-top: 3.5vw;
+	left: 10vw;
+	box-shadow: 0.3vw 0.3vw 2.2vw -0.45vw rgba(0,0,0,0.75);
+	font-family: 'Timeless';
+	font-size: 1.2vw;
+	padding: 0.5vw;
+	background: #e7e3d4;
+	border-bottom: 0.5vw solid #b23850;
+	border-radius: 1vw;
+}
+
+.footerFlexContainer{
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.footerContainer a{
+	font-family: 'Timeless';
+}
+
+.footerSpan{
+	margin: 0.5vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 20vw;
+}
+
+.footerCopyright{
+	position: relative;
+}
+
+.footerLogo{
+	width: 10vw;
+	border: 0.1vw solid black;
+}
+
+.footerMap{
+	width: 2vw;
+}
+
+.homepageImage{
+	position: relative;
+	width: 75%;
+	left: 12.5%;
+	height: 20vw;
+	background-size: cover;
+	background-position: center center;
+}
+
+.homepageImage2{
+	position: relative;
+	width: 90%;
+	left: 5%;
+	height: 20vw;
+	background-size: cover;
+	background-position: center center;
+}
+
+.homepageImage img, .homepageImage2 img{
+	position: relative;
+	display: block;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	box-shadow: 0.3vw 0.3vw 2.2vw -0.45vw rgba(0,0,0,0.75);
+	border-radius: 2.5vw 2.5vw 0 0;
+}
+
+.homepageImage a{
+	position: relative;
+	display: block;
+	z-index: 10;
+	width: 96%;
+	height: 50%;
+	padding: 2%;
+	line-height: 5vw;
+	text-align: right;
+	top: -55%;
+	left: 0;
+	font-size: 6.5vw;
+	color: #ffffff;
+	text-shadow: 0.3vw 0.3vw 0.9vw rgba(0,0,0,1);
+	text-decoration: none;
+}
+
+.homepageImage p{
+	position: relative;
+	z-index: -1;
+	padding: 0.25vw;
+	margin: 0;
+	left: 0;
+	width: 100%;
+	font-size: 1.75vw;
+	line-height: 2.5vw;
+	background: #e7e3d4;
+	border-radius: 1vw;
+	border-bottom: 0.5vw solid #b23850;
+	color: #000;
+	text-shadow:0.1vw 0.1vw 0.15vw rgba(255,255,255,0.5);
+}
+
+.homepageColourBar{
+	position: relative;
+	z-index: 2;
+	width: 71%;
+	left: 12.5%;
+	height: auto;
+	background: #e7e3d4;
+	border: 0;
+	padding: 1vw 2% 1vw 2%;
+	border-bottom: 1.5vw solid #b23850;
+	font-size: 1.3vw;
+	line-height: 1.5vw;
+	font-family: Timeless;
+	box-shadow: 0.3vw 0.3vw 2.2vw -0.45vw rgba(0,0,0,0.75);
+	border-radius: 0 0 2.5vw 2.5vw;
+}
+
+.homepageColourBar2{
+	position: relative;
+	z-index: 2;
+	width: 86%;
+	left: 5%;
+	height: auto;
+	background: #e7e3d4;
+	border: 0;
+	padding: 1vw 2% 1vw 2%;
+	border-bottom: 1.5vw solid #b23850;
+	font-size: 1.3vw;
+	line-height: 1.5vw;
+	font-family: Timeless;
+	box-shadow: 0.3vw 0.3vw 2.2vw -0.45vw rgba(0,0,0,0.75);
+	border-radius: 0 0 2.5vw 2.5vw;
+}
+
+.paypalImage{
+	width: 5vw; 
+	height: 1.2vw;
+}
+
+.menuButtonContainer{
+	display: none;
+}
+
+.closedMenuCartIcon{
+	display: none;
+}
+
+.ppSuccessImage{
+	height: 2.5vw;
+}
+
+.ppSuccessText{
+	line-height: 2.5vw; 
+	vertical-align: top; 
+	text-decoration: none;
+}
+
+.orderContainerDiv{
+	position: relative;
+	left: 2%;
+	width: 96%;
+	max-height: 30vw;
+	height: auto;
+	overflow: scroll;
+}
+
+.ordersul {
+    width: 110vw;
+    display: table;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.ordersli {
+    display: table-cell;
+    text-align: center;
+    border: 0.1vw solid black;
+    vertical-align: top;
+	font-size: 0.9vw;
+	padding-left: 0.2vw;
+	padding-right: 0.2vw;
+}
+
+
+.ordersli input{
+	font-size: 0.9vw;
+	line-height:1.75vw;
+	padding: 0 0.4vw 0 0.4vw;
+	width: 80%;
+	margin: 0.25vw;
+}
+
+.offerText{
+	position: absolute;
+	z-index: 100;
+	top: 10vw;
+	right: 2vw;
+	transform: rotate(15deg);
+	padding: 0.75vw;
+	background: #c4dbf6;
+	border-radius: 1.5vw;
+    border: 0.1vw solid black;
+    border-bottom: 0.5vw solid #b23850;
+	box-shadow: 0.4vw 0.4vw 1vw -0.45vw rgba(0,0,0,0.75);
+	font-family: Timeless;
+	font-size: 1.75vw;
+	line-height: 2vw;
+	text-align: center;
+}
+
+@media screen and (max-width: 550px) { 
+
+	body{
+		overflow: auto;
+		margin: 0;
+	}
+	
+	input, select {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+	}
+
+	.menuButtonContainer{
+		position: relative;
+		display: inline-block;
+		cursor: pointer;
+		padding: 0;
+		z-index: 999;
+		top: 0;
+		left: 2%;
+		margin: 0;
+		margin-bottom: 3vw;
+		font-size: 6vw;
+		line-height: 9vw;
+	}
+
+	.menuButtonBar1, .menuButtonBar2, .menuButtonBar3 {
+	  width: 15vw;
+	  height: 1.5vw;
+	  background-color: #000;
+	  margin: 1.5vw 0;
+	  transition: 0.2s;
+	  border-radius: 1vw;
+
+	}
+
+	.change .menuButtonBar1{
+		-webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+		transform: rotate(-45deg) translate(-9px, 6px) ;
+	}
+
+	.change .menuButtonBar2{
+		opacity: 0;
+	}
+
+	.change .menuButtonBar3{
+		-webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+		transform: rotate(45deg) translate(-8px, -8px) ;
+	}
+	
+	.closedMenuCartIcon{
+		display: block;
+		position: absolute;
+		right: 0;
+		top: 6vw;
+		margin: 0;
+		font-size: 6vw;
+		line-height: 8vw;
+		width: 35vw;
+	}
+	
+	.closedMenuCartIconNumber{
+		color: #ffffff;
+		text-shadow:
+   -0.5vw -0.5vw 0 #000,  
+    0.5vw -0.5vw 0 #000,
+    -0.5vw 0.5vw 0 #000,
+     0.5vw 0.5vw 0 #000;
+		position: absolute;
+		width: 10vw;
+		height: 10vw;
+		right: 22vw;
+		top: 11vw;
+		font-size: 12.5vw;
+		font-family: FoglihtenNo07, arial;
+		font-weight: bold;
+		text-align: center;
+		line-height: 12.5vw;
+	}
+	
+	#button4{
+		display: none;
+	}
+	
+	header{
+		position: relative;
+		left: 0;
+		width: 100%;
+	}
+
+	header nav .navBar{
+		padding: 0;
+		margin: 0;
+		border: 0;
+		box-shadow: 0 0 0 0;
+		left: 2%;
+		width: 96%;
+
+	}
+
+	header nav .navBarFlex{ 
+		
+		display: none;
+		flex-direction: column;
+	}
+	
+	.change .navBarFlex{
+		display: flex;
+	}
+	
+	header nav .navBarFlex div{
+		width: 100%;
+		height: 12vw;
+		margin-bottom: 4vw;
+		padding: 0;
+	}
+	
+	header nav .navBarFlex div a{
+		font-size: 8vw;
+	}
+	
+	.navBarFlex div:hover{
+		transform: scale(1);
+	}
+	
+	.headerText{
+		font-size: 10vw;
+		line-height: 15vw;
+		height: 20vw;
+		width: 96%;
+		margin: 0;
+		padding: 0;
+		left: 2%;
+	}
+	
+	.headerText2{
+		font-size: 15vw;
+		line-height: 13vw;
+		top: 1.5vw;
+		left: 2.5vw;
+	}
+	
+	.headerSubText{
+		font-size: 5vw;
+		line-height: 10vw;
+		bottom: 18vw;
+	}
+	
+	.headerLogo{
+		display: none;
+	}
+	
+	.headerLogo2{
+		position: absolute;
+		right: 1.25vw;
+		top: 1.25vw;
+		width: 20vw;
+		height: 20vw;
+		border-radius: 10vw;
+	}
+	
+	.cartNumber{
+		width: 10vw;
+		height: 9vw;
+		right: 1vw;
+		top: -1vw;
+		font-size: 5vw;
+		line-height: 10.4vw;
+	}
+	
+	.homepageImage{
+		height: 25vw;
+		background-size: cover;
+		background-position: center center;
+		left: 2%;
+		width: 96%;
+	}
+	
+	.homepageImage a{
+		width: 98%;
+		height: 80%;
+		padding: 1%;
+		line-height: 13vw;
+		font-size: 11vw;
+		top: -90%;		
+	}
+
+	.homepageImage p{
+		font-size: 5vw;
+		line-height: 7vw;
+	}
+	
+	.homepageImage2{
+		width: 96%;
+		left: 2%;
+		height: 50vw;
+	}
+
+
+	.homepageColourBar{
+		width: 92%;
+		font-size: 4vw;
+		line-height: 5vw;
+		padding: 3vw;
+		padding-left: 2%;
+		padding-right: 2%;
+		margin-bottom: 9vw;
+		left: 2%;
+	}
+	
+	.homepageColourBar2{
+		width: 92%;
+		left: 2%;
+		height: auto;
+		padding: 1vw 2% 1vw 2%;
+		border-bottom: 2vw solid #b23850;
+		font-size: 4vw;
+		line-height: 6.5vw;
+		box-shadow: 0.3vw 0.3vw 2.2vw -0.45vw rgba(0,0,0,0.75);
+		border-radius: 0 0 5vw 5vw;
+	}
+	
+	.paypalImage{
+		width: 15vw; 
+		height: 3.6vw;
+	}
+	
+	.footerContainer{
+		position: relative;
+		width: 92%;
+		left: 4%;
+		font-size: 5vw;
+		line-height: 6vw;
+		padding: 0.5vw;
+		background: #e7e3d4;
+		border-bottom: 0.5vw solid #b23850;
+		border-radius: 1vw;
+	}
+
+	.footerFlexContainer{
+		flex-direction: column;
+	}
+
+	.footerContainer a{
+		font-family: 'Timeless';
+	}
+
+	.footerSpan{
+		margin: 0;
+		width: 100%;
+	}
+	
+	.footerLogo{
+		margin-top: 5vw;
+		width: 50vw;
+		border: 0.1vw solid black;
+	}
+	
+	.pageContent{
+		left: 0;
+		width: 100%;
+		padding: 2vw;
+	}
+	
+	input[type=submit],[type=button],[type=reset],.button{
+		line-height: 9vw; 
+		font-size: 5vw;
+		margin: 0.5vw;
+		padding: 3vw;
+		padding-top: 0;
+		padding-bottom: 0;
+		border-radius: 3vw;
+	}
+
+	input[type=text],[type=email],[type=number],[type=password], textarea{
+		font-size: 4vw;
+		border-radius: 1vw;
+		border-bottom: 0.2vw solid #b23850;
+		padding: 0.8vw;
+		padding-left: 2.4vw;
+	}
+	
+	select{
+		padding: 0.15vw;
+		font-size: 3vw;
+		border-radius: 0.75vw;
+	}
+	
+	.ppSuccessImage{
+		height: 10vw;
+	}
+
+	.ppSuccessText{
+		line-height: 10vw; 
+		vertical-align: top; 
+		text-decoration: none;
+	}
+	
+	.topText{
+		margin: 2vw 5vw 2vw 5vw;
+		padding: 1vw;
+		font-size: 7vw;
+	}
+	
+	.offerText{
+		position: relative;
+		top: 10vw;
+		left: 0;
+		width: 98%;
+		transform: rotate(0);
+		font-size: 5vw;
+		line-height: 8vw;
+	}
+	
+	.pageBreak{
+		line-height: 15vw;
+	}
+
+}
+
+
+@font-face {
+  font-family: 'Timeless';
+  src: url('http://www.CornishWoodware.co.uk/fonts/Timeless.ttf');
+}
+
+@font-face {
+  font-family: 'FoglihtenNo07';
+  src: url('http://www.CornishWoodware.co.uk/fonts/FoglihtenNo07.otf');
+}
+
+@font-face {
+  font-family: 'Blacksword';
+  src: url('http://www.CornishWoodware.co.uk/fonts/Blacksword.otf');
+}

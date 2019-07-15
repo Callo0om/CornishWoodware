@@ -1,0 +1,64 @@
+#termsContent h1{
+	font-size: 5vw;
+	text-align: center;
+	font-family: FoglihtenNo07;
+}
+
+#termsContent h2{
+	font-size: 3vw;
+	font-family: FoglihtenNo07;
+}
+
+#termsContent h3{
+	font-size: 2vw;
+	font-family: FoglihtenNo07;
+}
+
+#termsContent h4{
+	font-size: 1.8vw;
+	font-family: FoglihtenNo07;
+}
+
+#termsContent p{
+	font-family: 'Timeless';
+	font-size: 1.2vw;
+}
+
+#termsContent ul{
+	font-family: 'Timeless';
+	font-size: 1.2vw;
+}
+
+@media screen and (max-width: 550px) { 
+
+	#termsContent h1{
+		font-size: 10vw;
+		line-height: 10vw;
+	}
+	
+	#termsContent h2{
+		font-size: 8vw;
+		line-height: 8vw;
+	}
+	
+	#termsContent h3{
+		font-size: 6vw;
+		line-height: 6vw;
+	}
+	
+	#termsContent h4{
+		font-size: 5vw;
+		line-height: 5vw;
+	}
+	
+	#termsContent p{
+		font-size: 5vw;
+		line-height: 5vw;
+	}
+	
+	#termsContent ul{
+		font-size: 4vw;
+		line-height: 4vw;
+	}
+
+}

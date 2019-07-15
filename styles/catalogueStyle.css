@@ -1,0 +1,337 @@
+.productListContainer{
+	position: relative;
+	left: 0;
+	width: auto;
+	height: auto;
+	margin: 2vw 1vw 2vw 1vw;
+	padding: 0;
+	padding-bottom: 2vw;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.sortingBox{
+	margin: 0; 
+	padding: 1% 5% 1% 5%; 
+	width: 90%; 
+	left: 0;
+	background: #e7e3d4;
+	border: 0;
+	box-shadow: 0.3vw 0.3vw 2.2vw -0.45vw rgba(0,0,0,0.75);
+	border-bottom: 0.25vw solid #b23850;
+	border-radius: 0 0 2.5vw 2.5vw;
+	font-size: 1.2vw;
+}
+
+.sortingTextBoxes{
+	font-size: 1.2vw;
+	font-family: Timeless;
+	width: 15%;
+}
+
+.productContainerCatalogue{
+	width: 18vw;
+	box-shadow:  0.3vw 0.3vw 2.2vw -0.45vw rgba(0,0,0,0.75);
+	background: #ffffff;
+	transition: transform .2s ease-in-out;
+	border-bottom: 0.5vw solid #b23850;
+	border-radius: 1vw 1vw 1vw 1vw;
+	font-size: 0.8vw;
+	margin: 0.5vw;
+	margin-bottom: 2.5vw;
+	padding-left: 0.5vw;
+	padding-right: 0.5vw;
+	font-size: 1.2vw;
+	font-family: Blacksword;
+}
+
+.productContainerCatalogue:hover{
+	transform: scale(1.15);
+}
+
+.productContainerTextLarger{
+	padding: 1vw;
+	font-size: 1.8vw;
+	line-height: 2.5vw;
+	text-decoration: none;
+}
+
+
+.productContainerTextLarge{
+	font-size: 1.6vw;
+	text-decoration: none;
+	line-height: 2.5vw;
+}
+
+.productContainerStar{
+	font-size: 2.5vw; 
+	vertical-align: bottom; 
+	text-decoration: none;
+}
+
+
+.productImageThumb{
+	width: 100%;
+	height: 100%;
+
+}
+
+.productImageThumb img{
+	width: 96%;
+	height: 15vw;
+	margin: 2%;
+	object-fit: cover;
+
+}
+
+.productImageThumbError{
+	width: 5vw;
+	height: 4vw;
+	object-fit: cover;
+
+}
+
+.productImageThumbGrey{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	filter: grayscale(100%) blur(2px);
+}
+
+.productStar{
+	font-size: 8vw;
+	font-weight: bold;
+	position: absolute;
+	z-index: 100;
+	color: white;
+	text-shadow:
+		-0.15vw -0.15vw 0 #000,  
+		0.15vw -0.15vw 0 #000,
+		-0.15vw 0.15vw 0 #000,
+		0.15vw 0.15vw 0 #000;
+}
+
+.catalogueRemoveButton{
+	position: relative;
+	margin-left: 5vw;
+	font-size: 0.8vw;
+	background: red;
+	color: white;
+}
+
+.catalogueTextBoxes{
+	text-align: left; 
+	padding-left: 10vw; 
+	padding-right: 10vw; 
+	font-family: Timeless, Arial;
+}
+
+.newProductPopup{
+	position: relative;
+	height:auto;
+	font-size: 1vw;
+	margin-bottom: 2vw;
+	margin-left: 5vw;
+	padding: 0;
+	width: 58vw;
+}
+
+.newProductPopup td{
+	
+	width: 50%;
+
+}
+
+.newProductPopup label{
+	position: relative;
+	display: inline-block;
+	width: 25%;
+	text-align: right;
+	vertical-align: top;
+}
+
+.newProductPopup input, .newProductPopup textarea, .newProductPopup select{
+	position: relative;
+	width: 70%;
+	border-radius: 0;
+	margin-bottom: 0.5vw;
+}
+
+.newProductPopup textarea{
+	height: 8vw;
+	font-size: 1vw;
+}
+
+.newProductPopup input[type=submit], .newProductPopup input[type=button]{
+	position: relative;
+	width: 90%;
+	left: 5%;
+}
+
+.newProductPopup fieldset{
+	height: auto;
+	border: 0.1vw solid black;
+	padding: 1vw;
+}
+
+
+.newProductPopup tr{
+	vertical-align: top;
+}
+
+#editForm{
+position: absolute;
+left: 28vw;
+top: -1vw;
+}
+
+.pageTitleImage{
+	position: relative;
+	width: 75%;
+	left: 12.5%;
+	height: 22vw;
+	background-size: cover;
+	background-position: center center;
+}
+
+.pageTitleImage img{
+	position: relative;
+	display: block;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	box-shadow: 0.3vw 0.3vw 2.2vw -0.45vw rgba(0,0,0,0.75);
+	border-radius: 2.5vw 2.5vw 0 0;
+}
+
+.pageTitleImage a{
+	position: relative;
+	display: block;
+	z-index: 10;
+	width: 96%;
+	height: 80%;
+	padding: 2%;
+	line-height: 7vw;
+	text-align: right;
+	top: -90%;
+	left: 0;
+	font-size: 6.5vw;
+	color: #ffffff;
+	text-shadow: 0.4vw 0.4vw 0.5vw rgba(0,0,0,0.75);
+	text-decoration: none;
+}
+
+.pageTitleImage p{
+	position: relative; 
+	z-index: 10;
+	margin-top: 2vw;
+	margin-bottom: 1vw;
+	font-size: 1.75vw;
+	line-height: 2vw;
+	font-family: Timeless;
+}
+
+.cataloguePageNumbers{
+	font-size: 2vw; 
+
+	padding: 0; 
+	margin: 0.5vw;
+}
+
+.productTypeLabel{
+	font-size: 2vw; 
+	text-decoration: underline; 
+	padding: 0; 
+	margin: 0.5vw;
+}
+
+@media screen and (max-width: 550px) { 
+	.catalogueTextBoxes{
+		padding: 1vw;
+	}
+	
+	.pageTitleImage{
+		position: relative;
+		height: 50vw;
+		left: 2%;
+		width: 96%;
+	}
+	
+	.pageTitleImage a{
+		font-size: 10vw;
+		line-height: 12vw;
+		margin-top: 2vw;
+		font-weight: normal;
+	}
+	
+	.pageTitleImage p{
+		font-size: 4vw;
+		line-height: 5vw;
+		margin-top: 6vw;
+	}
+	
+	.productContainerCatalogue{
+		width: 80vw;
+		border-bottom: 1vw solid #b23850;
+		border-radius: 2vw;
+		font-size: 5vw;
+		line-height: 6vw;
+		margin-bottom: 10vw;
+		margin-top: 5vw;
+		padding-top: 5vw;
+		padding-bottom: 5vw;
+	}
+	
+	#sortingForm{
+		text-align: center;
+		font-size: 4vw;
+		line-height: 5vw;
+	}
+	
+	.sortingTextBoxes{
+		font-size: 5vw;
+		width: 80%;
+		margin-left: 10%;
+		margin-bottom: 2vw;
+		display: block;
+	}
+	
+	.productContainerTextLarger{
+		padding: 1vw;
+		font-size: 9.5vw;
+		line-height: 10vw;
+	}
+	
+	.productContainerStar{
+		font-size: 9vw; 
+	}
+	
+	.productImageThumb img{
+		height: 65vw;
+	}
+
+	.productContainerTextLarge{
+		font-size: 6vw;
+	}
+	
+	.cataloguePageNumbers{
+		font-size: 6vw; 
+		margin: 2.5vw;
+	}
+	
+	.productTypeLabel{
+		font-size: 7vw; 
+		margin: 3vw;
+	}
+	
+	.catalogueRemoveButton{
+		margin-left: 5vw;
+		margin-top: 5vw;
+		font-size: 5vw;
+	}
+}

@@ -1,0 +1,66 @@
+#privacyContent h1{
+	font-size: 5vw;
+	text-align: center;
+	font-family: FoglihtenNo07;
+}
+
+#privacyContent h2{
+	font-size: 3vw;
+	font-family: FoglihtenNo07;
+}
+
+
+#privacyContent h3{
+	font-size: 2vw;
+	font-family: FoglihtenNo07;
+}
+
+#privacyContent h4{
+	font-size: 1.8vw;
+	font-family: FoglihtenNo07;
+}
+
+#privacyContent p{
+	font-family: 'Timeless';
+	font-size: 1.2vw;
+}
+
+#privacyContent ul{
+	font-family: 'Timeless';
+	font-size: 1.2vw;
+}
+
+
+@media screen and (max-width: 550px) { 
+
+	#privacyContent h1{
+		font-size: 10vw;
+		line-height: 10vw;
+	}
+	
+	#privacyContent h2{
+		font-size: 8vw;
+		line-height: 8vw;
+	}
+	
+	#privacyContent h3{
+		font-size: 6vw;
+		line-height: 6vw;
+	}
+	
+	#privacyContent h4{
+		font-size: 5vw;
+		line-height: 5vw;
+	}
+	
+	#privacyContent p{
+		font-size: 5vw;
+		line-height: 5vw;
+	}
+	
+	#privacyContent ul{
+		font-size: 4vw;
+		line-height: 4vw;
+	}
+
+}

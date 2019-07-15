@@ -1,0 +1,90 @@
+
+#deliveryContent h1{
+	font-size: 5vw;
+	font-family: FoglihtenNo07;
+}
+	
+#deliveryContent h2{
+	font-size: 3vw;
+	font-family: FoglihtenNo07;
+}
+
+
+#deliveryContent h4{
+	font-size: 1.8vw;
+}
+
+#deliveryContent p{
+	font-family: 'Timeless';
+	font-size: 1.2vw;
+}
+
+#deliveryContent table{
+	border: 0.1vw solid #000000;
+	background-color: #EEEEEE;
+	border-collapse: collapse;
+	width: 100%;
+}
+	
+#deliveryContent ul{
+	font-family: 'Timeless';
+	font-size: 1.2vw;
+}
+
+#deliveryContent td{
+	font-size: 1.4vw;
+	font-family: "Timeless";
+	border: 1px solid #AAAAAA;
+	padding: 3px 2px;
+	line-height: 1.7vw;
+}
+
+#deliveryContent tr:nth-child(even) {
+  background: #E0E0E0;
+}
+
+#deliveryContent legend{
+	font-size: 1.4vw;
+}
+
+#deliveryContent label{
+	font-size: 1.2vw;
+	font-family: 'Timeless';
+}
+
+@media screen and (max-width: 550px) { 
+
+	#deliveryContent h1{
+		font-size: 10vw;
+		line-height: 10vw;
+	}
+	
+	#deliveryContent h2{
+		font-size: 8vw;
+		line-height: 8vw;
+	}
+
+	#deliveryContent h4{
+		font-size: 6vw;
+		line-height: 6vw;
+	}
+
+	#deliveryContent label{
+		font-size: 6vw;
+	}
+	
+	#deliveryContent table{
+		margin-top: 5vw;
+	}
+	
+	#deliveryContent td{
+		font-size:5vw;
+		line-height: 5vw;
+	}
+	
+	#deliveryContent p{
+		font-size: 5vw;
+		line-height: 5vw;
+	}
+
+}

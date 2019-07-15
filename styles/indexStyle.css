@@ -1,0 +1,49 @@
+.carousel { 
+	position:relative; 
+	min-height: 20px; 
+	height:auto !important; 
+	height: 20px;  
+	background:url(images/anoslide/loader.gif) center center no-repeat; 
+	width: 58vw;
+	left: 1vw;
+}
+
+.carousel .next, .carousel .prev { 
+	display:none; 
+	width:56px; 
+	height:56px; 
+	position:absolute; 
+	top: 50%;
+	margin-top:-28px; 
+	z-index:9999; 
+	cursor:pointer; 
+}
+
+.carousel .prev { 
+	left: 1vw;
+	background:url(images/anoslide/prev.png) 0 0 no-repeat;  
+}
+
+.carousel .next { 
+	right: 1vw;
+	background:url(images/anoslide/next.png) 0 0 no-repeat; 
+}
+
+
+
+.carousel li { 
+	display:none; 
+}
+
+.carousel li img { 
+	width:100%; 
+	height:auto; 
+}
+
+img {
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	-ms-user-select: none;      /* IE 10+ */
+	-o-user-select: none;
+	user-select: none;    
+}

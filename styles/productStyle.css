@@ -1,0 +1,667 @@
+
+.productPageTitle{
+	font-size: 6vw;
+}
+
+.productTitle{
+	position: absolute;
+	font-size: 3.5vw;
+	left: 2vw;
+	top: 2vw;
+	margin: 0;
+}
+
+.productPageContainer{
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	left: 5vw;
+	width: 90vw;
+	box-shadow:  0.3vw 0.3vw 2.2vw -0.45vw rgba(0,0,0,0.75);
+	padding: 0;
+	margin: 0;
+	padding-top: 5vw;
+	
+}
+
+.productPageContentLeft{
+	margin: 2vw;
+	width: 55%;
+}
+
+.productPageContentRight{
+	margin: 2vw;
+	width: 35%;
+}
+
+.productMainImageContainer{
+	position: relative;
+	
+	padding: 1vw;
+	box-shadow: inset 0.3vw 0.3vw 2.2vw -0.45vw rgba(0,0,0,0.75);
+}
+
+.productMainImage{
+	position: relative;
+	width: 100%;
+	height: 30vw;
+	object-fit: cover;
+	padding: 0;
+	margin: 0;
+	box-shadow: 0.3vw 0.3vw 2.2vw -0.45vw rgba(0,0,0,0.75);
+	transition: width 0.1s, opacity .25s ease-in-out;
+	
+}
+
+.productMainImageBuffer{
+	position: absolute;
+	width: calc(100% - 2vw);
+	height: 30vw;
+	left: 1vw;
+	top: 1vw;
+	object-fit: cover;
+	padding: 0;
+	margin: 0;
+	opacity: 1;
+	transition: opacity .25s ease-in-out;
+}
+
+.enlarge{
+	position: absolute;
+	z-index: 99;
+	width: 3vw;
+	height: 3vw;
+	right: 1.5vw;
+	top: 1.5vw;
+	transition: transform 0.1s;
+}
+
+.enlarge:hover{
+	transform: scale(1.10);
+}
+
+.productPageThumbnails{
+	position: relative;
+	width: auto;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-content: flex-start;
+	padding: 0;
+	margin: 0;
+}
+
+.productThumbImage{
+	width: 4vw;
+	height: 3vw;
+	margin-right: 0.5vw;
+	box-shadow: 0.3vw 0.3vw 2.2vw -0.45vw rgba(0,0,0,0.75);
+	transition: all .2s ease-in-out;
+	object-fit: cover;
+}
+
+.productThumbImage:hover{
+	transform: scale(1.15);
+}
+
+.enlargeImage{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+	background: white;
+	opacity: 0;
+	visibility: hidden;
+	transition: all .2s ease-in-out;
+}
+
+.enlargeImage p{
+	top: -1vw;
+	left: 50%;
+	width: 35vw;
+	height: 3vw;
+	line-height: 3vw;
+	text-align: center;
+	vertical-align: middle;
+	margin-left: -17.5vw;
+	font-size: 2vw;
+	color: black;
+	position: fixed;
+	z-index: 2;
+	font-family: Blacksword, arial;
+	box-shadow: 0.3vw 0.3vw 1vw -0.45vw rgba(0,0,0,0.75);
+	padding: 0.5vw 1.5vw 0.5vw 1.5vw;
+	background: #e7e3d4;
+	border: 0.1vw solid black;
+	border-bottom: 0.25vw solid #b23850;
+	border-radius: 1vw;
+	margin-bottom: 0.5vw;
+}
+
+.enlargeImageImg{
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: auto;
+}
+
+.productPriceTag{
+	position: absolute;
+	z-index: 99;
+	width: 12.5vw;
+	height: 5vw;
+	right: -3vw;
+	bottom: 5vw;
+	background: url("../images/tag.png");
+	background-size: 100% 100%;
+	text-align: right;
+	font-family: Blacksword, arial;
+	padding-right: 1vw;
+	transform: rotate(-45deg);
+}
+
+.productPriceTag a{
+	position: relative;
+	text-decoration: none;
+	top: 0.5vw;
+}
+
+.productPriceTagSmall{
+	font-size: 1.2vw;
+	line-height: 1.2vw;
+}
+
+.productPriceTagMed{
+	font-size: 1.6vw;
+	line-height: 1.6vw;
+}
+
+.productPriceTagLarge{
+	font-size: 2.25vw;
+	line-height: 2.25vw;
+}
+
+.productPriceTagXLarge{
+	font-size: 2.5vw;
+	line-height: 3.5vw;
+}
+
+.productRightContent{
+	position: relative;
+	width: auto;
+	height: auto;
+	padding: 1vw;
+	box-shadow: inset 0.3vw 0.3vw 2.2vw -0.45vw rgba(0,0,0,0.75);
+	margin-right: 4vw;
+}
+
+.productRightContent table{
+	width: 100%;
+	padding: 0;
+}
+	
+.productRightContent td{
+	padding: 0;
+	border: 0;
+	width: 50%;
+
+}
+
+.productRightContent fieldset{
+	font-size: 1.1vw;
+	font-family: Timeless, arial;
+	border: 0;
+	min-height: 4vw;
+	box-shadow: 0.3vw 0.3vw 1.5vw -0.45vw rgba(0,0,0,0.75);
+	border-radius: 0.5vw;
+	border: 0.1vw solid black;
+}
+
+
+.productRightContent legend{
+	font-size: 1.65vw;
+	font-family: Blacksword, arial;
+	box-shadow: 0.3vw 0.3vw 1vw -0.45vw rgba(0,0,0,0.75);
+	padding: 0.5vw 1.5vw 0.5vw 1.5vw;
+	background: #e7e3d4;
+	border: 0.1vw solid black;
+	border-bottom: 0.25vw solid #b23850;
+	border-radius: 1vw;
+	margin-bottom: 0.5vw;
+}
+
+.productRightContent input{
+	font-size: 1.1vw;
+	font-family: Timeless, arial;
+}
+
+.tooltip {
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: auto;
+  left: 30vw;
+  top: 4vw;
+  background: #c4dbf6;
+  color: #000000;
+  text-align: center;
+  padding: 0.5vw;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
+  border-bottom: 0.5vw solid #b23850;
+  border-radius: 1.5vw;
+  position: absolute;
+  z-index: 10000;
+  font-size: 1.75vw;
+  box-shadow: 0.3vw 0.3vw 2.2vw -0.45vw rgba(0,0,0,0.75);
+  line-height: 2vw;
+  font-family: Timeless;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: calc(100% + 0.5vw); /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -1vw;
+  border-width: 1vw;
+  border-style: solid;
+  border-color: #b23850 transparent transparent transparent;
+}
+
+.buyNowFlexContainer{
+	display: flex; 
+	flex-direction: row; 
+	justify-content: left;
+}
+
+.buyNowFlexContainer a{
+	font-size: 2vw;
+	line-height: 2.5vw;
+	vertical-align: middle;
+	text-decoration: none;
+	font-family: 'Timeless';
+}
+
+.buyNowFlexContainer input[type=text]{
+	
+	font-size: 1.25vw;
+	text-align: center;
+	height: 2.5vw;
+	padding: 0;
+	margin: 0;
+	
+}
+
+
+.buyNowFlexContainer .dealsPlusMinusButtons{
+	width: 2.5vw;
+	font-size: 0.9vw;
+	line-height: 1vw;
+	text-align: center;
+	height: 1.25vw;
+	padding: 0;
+	margin: 0;
+	margin-left: 0.5vw;
+	display: block;
+	vertical-align: top;
+	border-bottom: 0.15vw solid #b23850;
+}
+
+.buyNowFlexContainer .buyNowButton{
+	width: 10vw;
+	font-size: 1vw;
+	text-align: center;
+	height: 2.5vw;
+	padding: 0;
+	margin: 0;
+}
+
+.paypalImageDiv{
+	margin-left: 2vw;
+	margin-top: -1vw; 
+	font-size: 1.3vw;
+}
+	
+.paypalImageDiv img{
+	width: 8vw;
+}
+
+.addToCartQuantityBox{
+	padding: 1.5vw;
+}
+
+.choppingBoardScale{
+	
+	width: 100%;
+}
+
+.choppingBoardImgDiv{
+	position: absolute;
+}
+
+.TL{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1vw;
+	height: 1vw;
+}
+
+.TR{
+	position: absolute;
+	top: 0;
+	right: 0;	
+	width: 1vw;
+	height: 1vw;
+}
+
+.BL{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 1vw;
+	height: 1vw;
+}
+
+.BR{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 1vw;
+	height: 1vw;
+}
+
+.L{
+	position: absolute;
+	top: 1vw;
+	left: 0;
+	width: 1vw;
+	height: calc(100% - 2vw);
+}
+
+.T{
+	position: absolute;
+	top: 0;
+	left: 1vw;
+	width: calc(100% - 2vw);
+	height: 1vw;
+}
+
+
+.R{
+	position: absolute;
+	top: 1vw;
+	right: 0;
+	width: 1vw;
+	height: calc(100% - 2vw);
+}
+
+.B{
+	position: absolute;
+	bottom: 0;
+	left: 1vw;
+	width: calc(100% - 2vw);
+	height: 1vw;
+}
+
+.back{
+	position: absolute;
+	left: 1vw;
+	top: 1vw;
+	width: calc(100% - 2vw);
+	height: calc(100% - 2vw);
+}
+
+.bread{
+	position: absolute;
+	z-index: 1;
+	transform: rotate(-10deg);
+}
+
+.popUpStar{
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.PopUpDiv{
+	font-size: 0.9vw;
+}
+
+.choppingBoardImgSlotDiv{
+	position: relative;
+	z-index: 1;
+	height: 50%;
+	left: 1.5vw;
+	top: 50%;
+	overflow: hidden;
+}
+
+.SlotT{
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+}
+
+.SlotM{
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.SlotB{
+	position: absolute;
+	z-index: 2;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+}
+
+@media screen and (max-width: 550px) {
+	
+	.PopUpDiv{
+		font-size: 3vw;
+	}
+
+
+	.productPageContentLeft{
+		margin: 2vw;
+		width: 100%;
+	}
+
+	.productPageContentRight{
+		margin: 2vw;
+		width: 100%;
+	}
+	
+	.productTitle{
+		position: relative;
+		font-size: 8vw;
+		line-height: 3vw;
+		left: 0;
+		top: 0;
+		text-align: center;
+		font-weight: bold;
+		width: 96%;
+		padding-left: 2%;
+		padding-right: 2%;
+	}
+	
+	.productTitle .button{
+		font-size: 6vw;
+		padding-left: 10vw;
+		padding-right: 10vw;
+		padding-top: 2vw;
+		padding-bottom: 2vw;
+		display: block;
+
+	}
+	
+	.productPageContainer{
+		display: flex;
+		flex-wrap: wrap;
+		position: relative;
+		left: 2%;
+		width: 96%;
+		padding-top: 0;
+		margin-top: 5vw;
+	}
+	
+	.productMainImageContainer{
+		height: 79vw;
+	}
+	
+	.productMainImage{
+		height: 60vw;
+	}
+
+	.productRightContent{
+		width: 96%;
+		left: 0;
+		height: auto;
+		margin: 0;
+		padding: 2%;
+		box-shadow: inset 0.3vw 0.3vw 2.2vw -0.45vw rgba(0,0,0,0.75);
+		margin-right: 4vw;
+	}
+	
+	.productThumbImage{
+		width: calc(100% / 9);
+		height: 12vw;
+		margin-right: 1vw;
+		margin-top: 1vw;
+	}
+	
+	.productPriceTag{
+		width: 38vw;
+		height: 18vw;
+		right: -3vw;
+		bottom: 15vw;
+		padding-right: 1vw;
+	}
+	
+	.productPriceTag a{
+		top: 2vw;
+		right: 2vw;
+	}
+
+	.productPriceTagSmall{
+		font-size: 4vw;
+		line-height: 4vw;
+	}
+
+	.productPriceTagMed{
+		font-size: 5vw;
+		line-height: 5vw;
+	}
+
+	.productPriceTagLarge{
+		font-size: 9vw;
+		line-height: 9vw;
+	}
+
+	.productPriceTagXLarge{
+		font-size: 9vw;
+		line-height: 13vw;
+	}
+	
+	.enlarge{
+		width: 14vw;
+		height: 14vw;
+	}
+	
+	.productRightContent fieldset{
+		font-size: 4vw;
+		line-height: 4vw;
+		margin-top: 5vw;
+		margin-left: 2vw;
+		margin-right: 2vw;
+		
+	}
+	
+	.productRightContent form{
+		display: inline;
+	}
+
+
+	.productRightContent legend{
+		font-size: 5vw;
+	}
+
+	.productRightContent input{
+		font-size: 6vw;
+		padding: 2vw;
+		height: 10vw;
+		line-height: 10vw;
+		margin: 0;
+		padding: 0;
+		padding-left: 2vw;
+		padding-right: 2vw;
+	}
+	
+	.tooltip .tooltiptext {
+		font-size: 5vw;
+		top: -16vw;
+		left: 20vw;
+	}
+	
+	.tooltip .tooltiptext::after {
+	  margin-left: -3vw;
+	  border-width: 3vw;
+	}
+	
+	.buyNowFlexContainer input[type=text]{
+		width: 10vw;
+		font-size: 6vw;
+		height: 10vw;
+	}
+
+	.buyNowFlexContainer .dealsPlusMinusButtons{
+		width: 10vw;
+		font-size: 6vw;
+		height: 10vw;
+		display: inline;
+	}
+	
+	.dealsPlusMinusButtonsContainer{
+		width: 22vw;
+	}
+
+	.buyNowFlexContainer .buyNowButton{
+		width: 32vw;
+		font-size: 6vw;
+		height: 10vw;
+	}
+	
+	.paypalImageDiv{
+		margin-left: 2vw;
+		margin-top: 2vw; 
+		font-size: 8vw;
+		line-height: 9vw;
+	}
+	
+	.paypalImageDiv img{
+		width: 30vw;
+	}
+
+}
